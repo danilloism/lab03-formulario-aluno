@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  exercicio1:
+    build: ./exercicio1
+    container_name: devtech-exercicio1
+    ports:
+      - "8081:8080"
+    volumes:
+      - ./exercicio1:/app
+
+  exercicio2:
+    build: ./exercicio2
+    container_name: devtech-exercicio2
+    ports:
+      - "8082:8080"
+    volumes:
+      - ./exercicio2:/app
+
+  exercicio3:
+    build: ./exercicio3
+    container_name: devtech-exercicio3
+    ports:
+      - "8083:8080"
+    volumes:
+      - ./exercicio3:/app
+
+  exercicio4:
+    build: ./exercicio4
+    container_name: devtech-exercicio4
+    ports:
+      - "8084:8080"
+    volumes:
+      - ./exercicio4:/app
